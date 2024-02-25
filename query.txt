@@ -1,0 +1,26 @@
+CREATE TABLE [dbo].[UsersTable] (
+    [id]       INT          IDENTITY (1, 1) NOT NULL,
+    [name]     VARCHAR (20) NOT NULL,
+    [email]    VARCHAR (40) NOT NULL,
+    [contact]  VARCHAR (15) NOT NULL,
+    [password] VARCHAR (30) NOT NULL,
+    PRIMARY KEY CLUSTERED ([id] ASC)
+);
+
+
+
+CREATE TABLE [dbo].[ProductTable] (
+    [id]          INT          IDENTITY (1, 1) NOT NULL,
+    [name]        VARCHAR (20) NOT NULL,
+    [description] VARCHAR (50) NOT NULL,
+    [price]       VARCHAR (20) NOT NULL,
+    PRIMARY KEY CLUSTERED ([id] ASC)
+);
+
+
+CREATE TABLE [dbo].[Order] (
+    [Id]       INT          NOT NULL,
+    [name]     VARCHAR (20) NOT NULL,
+    [price]    VARCHAR (20) NOT NULL,
+    [quantity] VARCHAR (20) NOT NULL
+);
